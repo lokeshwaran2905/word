@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Word Counter</h1>
+    <textarea name="" id="words" cols="30" rows="10"></textarea>
+    <input type="button" value="START" onclick="count()">
+    <p id="result"></p>
+    <script>
+        function count(){
+            var a = document.getElementById("words").value;
+            var b = a.split(" "); 
+            var c = b.length;
+            document.getElementById("result").innerHTML = "Total number of words is" + " " + c;
+        }
+    </script>
+</body>
+</html>
